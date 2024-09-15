@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+    "postinstall": "wasm-pack build --target web -d ../svelte/src/lib/wasm --release --no-pack ../rust-wasm",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",

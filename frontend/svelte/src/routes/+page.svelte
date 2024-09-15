@@ -1,5 +1,7 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
     import LocalStorage from '$lib/components/LocalStorage.svelte';
+    import init, { greet } from '$lib/wasm/rust_wasm.js';
 
     let currentValue: string = "";
 
@@ -11,11 +13,12 @@
         console.log(value)
         currentValue = value;
     }
+
+    onMount(async () => {
+        await init();
+        greet("Svelte");
+    });
 </script>
-<!--
-<h2>Current Value</h2>
-<p>{currentValue}</p>
--->
 
 <div>
     <label for="name">Value: </label>
