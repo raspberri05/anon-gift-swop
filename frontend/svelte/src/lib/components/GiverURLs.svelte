@@ -167,7 +167,7 @@
 
 <div class="container">
 	<button class="styled-button" on:click={createAssignment}>
-		Generate assignment
+		Generate Assignment
 	</button>
 	{#if $assignment_names.length > 0}
   <ul class="pair-list">

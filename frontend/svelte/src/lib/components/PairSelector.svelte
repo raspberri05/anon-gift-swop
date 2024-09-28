@@ -145,7 +145,7 @@
     {/each}
   </select>
 
-  <button on:click={addPair(selectedIndex1,selectedIndex2)} disabled={disableAddButton}>Add Pair</button>
+  <button on:click={addPair(selectedIndex1,selectedIndex2)} disabled={disableAddButton}>Add Forbidden Pairing</button>
 
   <ul class="pair-list">
     {#each $pairs as [index1, index2], idx}

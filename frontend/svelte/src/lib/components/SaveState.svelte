@@ -105,11 +105,11 @@
 
 <div class="container">
 <a target="_blank" class="link-button encode-button" href={$encodedUrl}>
-  Current setup
+  Current Setup
 </a>
 {#if $assignment}
 <a target="_blank" class="link-button assignment-button" href={$encodedUrl2}>
-  Current state (include latest assignment)
+  Current Setup + Current Assignment
 </a>
 {/if}
 </div>
