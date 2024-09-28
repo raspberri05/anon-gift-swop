@@ -56,8 +56,10 @@
   
   function createAssignment(){
 	  assignment.update(() => {
-      let res = process_assignment(Array.from($selection), $pairs, $history);
-      if (res) return Array.from(res);
+      if ($selection && $selection.size > 0) {
+        let res = process_assignment(Array.from($selection), $pairs, $history);
+        if (res) return Array.from(res);
+      }
       return null;
 
     });
