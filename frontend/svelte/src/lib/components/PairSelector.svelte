@@ -88,6 +88,7 @@
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
+    margin-left: -10px;
   }
 
   .pair-item:last-child {
@@ -98,6 +99,8 @@
     font-size: 18px;
     flex: 1;
     color: #333;
+    display: flex;
+    justify-content: center;
   }
 
 .delete-button {
@@ -118,12 +121,7 @@
 
 .pair-name {
   flex: 1; 
-  text-align: center;
   color: #333;
-}
-
-.pair-separator {
-  margin: 0 10px; 
 }
 
 </style>
