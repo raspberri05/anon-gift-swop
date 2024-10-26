@@ -90,6 +90,16 @@
     justify-content: space-between;
   }
 
+  .pair-item span:first-child {
+    justify-content: left;
+  }
+
+  .pair-item span:nth-child(3) {
+    justify-content: left;
+    margin-right: 10px;
+
+  }
+
   .pair-item:last-child {
     border-bottom: none;
   }
