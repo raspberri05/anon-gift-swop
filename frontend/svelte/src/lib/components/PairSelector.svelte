@@ -88,7 +88,6 @@
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
-    margin-left: -10px;
   }
 
   .pair-item:last-child {
